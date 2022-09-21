@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2
+  prefabDisparo: {fileID: 1767651178708432235, guid: 7c2e4b151574ec3478d305508502bf71, type: 3}
 --- !u!50 &1216636433
 Rigidbody2D:
   serializedVersion: 4
