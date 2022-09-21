@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemigo.cs" />
     <Compile Include="Assets\Scripts\Nave.cs" />
+    <Compile Include="Assets\Scripts\Disparo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
