@@ -23,6 +23,7 @@ public class Nave : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            GetComponent<AudioSource>().Play();
             Transform disparo = 
                 Instantiate(prefabDisparo, transform.position, 
                 Quaternion.identity);
