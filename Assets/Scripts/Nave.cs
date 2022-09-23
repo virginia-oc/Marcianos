@@ -7,11 +7,13 @@ public class Nave : MonoBehaviour
     [SerializeField] float velocidad = 4;
     [SerializeField] Transform prefabDisparo;
     private float velocidadDisparo = 4;
+    [SerializeField] TMPro.TextMeshProUGUI texto;
+    private int vidas = 3;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        texto.text = "Vidas restantes: " + vidas;
     }
 
     // Update is called once per frame
@@ -41,6 +43,6 @@ public class Nave : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Golpeado");
+        texto.text = "Vidas restantes: " + vidas--;
     }
 }

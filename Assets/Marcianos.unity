@@ -671,6 +671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 4
   prefabDisparo: {fileID: 1767651178708432235, guid: 7c2e4b151574ec3478d305508502bf71, type: 3}
+  texto: {fileID: 1997841510}
 --- !u!50 &1216636433
 Rigidbody2D:
   serializedVersion: 4
@@ -1145,7 +1146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -29.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 200.24, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997841510
 MonoBehaviour:
