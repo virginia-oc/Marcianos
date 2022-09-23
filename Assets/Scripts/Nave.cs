@@ -16,10 +16,17 @@ public class Nave : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         float horizontal = Input.GetAxisRaw("Horizontal");
-        transform.Translate(horizontal * velocidad * Time.deltaTime, 0, 0);
+        float deltaX = horizontal * velocidad * Time.deltaTime;
+
+        if (transform.position.x + deltaX > -4 
+            && transform.position.x + deltaX < 4)
+        {
+            transform.Translate(deltaX, 0, 0);
+        }
         //Debug.Log(Time.deltaTime + "seg, " + (1.0f / Time.deltaTime) + "FPS");
+        
 
         if (Input.GetButtonDown("Jump"))
         {
