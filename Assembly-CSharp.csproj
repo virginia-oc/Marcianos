@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\disparoEnemigo.cs" />
     <Compile Include="Assets\Scripts\Disparo.cs" />
     <Compile Include="Assets\Scripts\Nave.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
