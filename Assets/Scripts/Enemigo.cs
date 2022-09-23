@@ -6,6 +6,7 @@ public class Enemigo : MonoBehaviour
 {
     private static float velX = 2;
     private static float velY = 1;
+    [SerializeField] Transform disparoEnemigo;
 
     // Start is called before the first frame update
     void Start()
