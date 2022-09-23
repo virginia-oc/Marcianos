@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Nave : MonoBehaviour
 {
-    [SerializeField] float velocidad = 2;
+    [SerializeField] float velocidad = 4;
     [SerializeField] Transform prefabDisparo;
     private float velocidadDisparo = 4;
 

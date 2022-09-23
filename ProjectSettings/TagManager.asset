@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LimiteSuperior
   - Enemigo
+  - Nave
+  - LimiteInferior
   layers:
   - Default
   - TransparentFX

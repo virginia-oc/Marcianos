@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cedefb5d4a6b440b89307c38e5c2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabDisparoEnemigo: {fileID: 374670965560460139, guid: 96111aa90d1b2e940ab8588b55ee1b8d, type: 3}
 --- !u!95 &12252437
 Animator:
   serializedVersion: 4

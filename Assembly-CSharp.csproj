@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemigo.cs" />
     <Compile Include="Assets\Scripts\disparoEnemigo.cs" />
-    <Compile Include="Assets\Scripts\LimiteSuperiorPantalla.cs" />
     <Compile Include="Assets\Scripts\Disparo.cs" />
     <Compile Include="Assets\Scripts\Nave.cs" />
   </ItemGroup>

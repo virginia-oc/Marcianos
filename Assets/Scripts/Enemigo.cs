@@ -6,12 +6,30 @@ public class Enemigo : MonoBehaviour
 {
     private static float velX = 2;
     private static float velY = 1;
-    [SerializeField] Transform disparoEnemigo;
+    [SerializeField] Transform prefabDisparoEnemigo;
+    private float velocidadDisparo = -4;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Disparar());
+    }
+
+    IEnumerator Disparar()
+    {
+        float pausa = Random.Range(1.0f, 11.0f);
+        yield return new WaitForSeconds(pausa);
+
+        Transform disparo = Instantiate(prefabDisparoEnemigo, 
+            transform.position, Quaternion.identity);
+
+        Physics2D.IgnoreCollision(
+            disparo.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
+        disparo.gameObject.GetComponent<Rigidbody2D>().velocity =
+            new Vector3(0, velocidadDisparo, 0);
+
+        StartCoroutine(Disparar());
     }
 
     // Update is called once per frame
