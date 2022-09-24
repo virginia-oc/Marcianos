@@ -21,7 +21,7 @@ public class Nave : MonoBehaviour
     {   
         float horizontal = Input.GetAxisRaw("Horizontal");
         float deltaX = horizontal * velocidad * Time.deltaTime;
-
+        
         if (transform.position.x + deltaX > -4 
             && transform.position.x + deltaX < 4)
         {
